@@ -1,0 +1,85 @@
+.container {
+  width: 600px;
+  height: 550px;
+  text-align: center;
+  position: fixed;
+  right: 5px;
+  bottom: 5px;
+  padding: 0;
+  background-color: rgba(203, 203, 206, 0.66);
+  z-index: 5;
+}
+.avatar-div {
+  position: absolute;
+  bottom: 45px;
+  left: 5px;
+}
+.avatar-div .avatar {
+  border-radius: 45px;
+}
+.header {
+  height: 35px;
+  width: 100%;
+  background-color: #354c90;
+  border-radius: 4px;
+  color: white;
+  padding-top: 7px;
+}
+.header .close-icon {
+  float: right;
+  font-size: 1.2em;
+  padding-right: 20px;
+  cursor: pointer;
+}
+.say-div {
+  position: absolute;
+  width: 100%;
+  padding: 11px;
+  height: 55px;
+  bottom: -6px;
+}
+.say-input {
+  width: 100%;
+  border-radius: 8px;
+  height: 100%;
+  padding: 13px;
+}
+.chat-div {
+  width: 100%;
+}
+.content {
+  left: 17%;
+  width: 83%;
+  height: 472px;
+  background-color: rgba(203, 203, 206, 0.66);
+  border-radius: 4px;
+  overflow: auto;
+  position: relative;
+}
+.content li {
+  list-style-type: none;
+}
+.content li:nth-child(even) {
+  text-align: left;
+  padding: 8px;
+  margin-top: 15px;
+}
+.content li:nth-child(even) span {
+  color: white;
+  background-color: #286090;
+  padding: 10px 20px;
+  border-radius: 10px;
+  line-height: 44px;
+}
+.content li:nth-child(odd) {
+  text-align: right;
+  padding: 8px;
+  margin-top: 15px;
+}
+.content li:nth-child(odd) span {
+  background-color: #e41e53;
+  color: wheat;
+  padding: 10px 20px;
+  border-radius: 10px;
+  line-height: 44px;
+}

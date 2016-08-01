@@ -1,0 +1,34 @@
+<div class="auto-form">	
+<table>
+  <tr>
+    <td>State</td>
+     <td><input [(ngModel)]="carInfo.state" >	</td>
+  </tr>
+  
+ <tr>
+    <td>Make</td>
+     <td><input #make [(ngModel)]="carInfo.make" >	</td>
+  </tr>
+  
+ <tr>
+    <td>Model</td>
+     <td><input #model [(ngModel)]="carInfo.model" >	</td>
+  </tr>
+  
+ <tr>
+    <td>Year</td>
+     <td><input #year [(ngModel)]="carInfo.year" >	</td>
+  </tr>      
+
+ <tr>
+    <td></td>
+     <td class="btn-submit"><button  (click)="onSend($event)">Submit</button></td>
+  </tr>      
+   
+</table>		
+</div>
+		
+
+
+
+

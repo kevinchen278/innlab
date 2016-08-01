@@ -1,0 +1,9 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../../images/bg.jpg");
+}
+a:link,
+a:visited {
+  text-decoration: none;
+}

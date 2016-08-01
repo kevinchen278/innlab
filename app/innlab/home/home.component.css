@@ -1,0 +1,47 @@
+
+.mail-box {
+	width: 34%;
+	height: 604px;
+	background-color:lightyellow ;
+	display: inline-block; 
+	border: 2px solid darkgray;
+	float: left;
+}
+
+.mail-list-detail{
+	width: 64%;
+	height: 604px;
+	background-color:lightyellow ;
+	display: inline-block; 
+	border: 2px 2px 2px 0  solid darkgray;
+	float: left;	
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+.account {
+	padding: 20px 0 15px 20px;
+}
+
+.inbox {
+	padding: 0 0 10px 40px
+
+}
+
+.sent {
+	padding: 0 0 10px 40px
+}
+
+a:hover {
+	cursor: pointer;
+}
+
+.active {
+	color: red;
+}

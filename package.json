@@ -1,0 +1,41 @@
+{
+  "name": "innlab-gateway",
+  "version": "0.0.1",
+  "description": "TCS Ins/HC, Innovation Lab",
+  "main": "index.js",
+  "scripts": {
+    "start": "concurrent \"npm run tsc:w\" \"npm run lite  src/index.html\" ",
+    "lite": "lite-server",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "typings": "typings",
+    "postinstall": "typings install",
+    "test": "live-server --open=unit-test.html"
+  },
+  "keywords": [
+    "Angular2.0",
+    "TCS Ins/HC",
+    "Innovation Lab"
+  ],
+  "author": "Ins/HC Innovation Lab",
+  "license": "@TCS",
+  "dependencies": {
+    "angular2": "2.0.0-beta.17",
+    "es6-promise": "^3.0.2",
+    "es6-shim": "^0.35.0",
+    "ng2-bootstrap": "^1.0.17",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "5.0.0-beta.6",
+    "systemjs": "0.19.26",
+    "zone.js": "0.6.12"
+  },
+  "devDependencies": {
+    "concurrently": "^2.0.0",
+    "jasmine-core": "2.4.1",
+    "lite-server": "^2.2.0",
+    "live-server": "^1.0.0",
+    "rewire": "^2.5.1",
+    "typescript": "^1.8.10",
+    "typings": "^0.8.1"
+  }
+}

@@ -1,0 +1,39 @@
+<div [(hidden)] = "showChatIcon">
+		<a class="chat-icon" >
+			<img  *ngIf="bottype===1" (click)="toggleChat()" [style.right]="imgPos" class="avatar" src="images/avatar.jpg" alt="Avatar">
+			<img  *ngIf="bottype===2" (click)="toggleChat()" [style.right]="imgPos" class="avatar" src="images/cathy2.jpg" alt="Avatar">
+			<img  *ngIf="bottype===3" (click)="toggleChat()" [style.right]="imgPos" class="avatar" src="images/cathy1.jpg" alt="Avatar">
+		</a>
+</div>
+
+<section class="container" [(hidden)] = "!showChatIcon">
+	
+	<div>
+		<div class="header">
+			<span (click)="onPlay()">Chat with Cathy {{bottype}}</span><span (click)="toggleChat()" class="close-icon">X</span>
+		</div>
+		
+		<div class="avatar-div">
+			<img class="avatar-2" *ngIf="bottype===1" src="images/avatar.jpg" (click)="clearMessage()" alt="Avatar" ><span class="avatar-text"></span>
+			<img class="avatar-2" *ngIf="bottype===2" src="images/cathy2.jpg" (click)="clearMessage()" alt="Avatar" ><span class="avatar-text"></span>
+			<img class="avatar-2" *ngIf="bottype===3" src="images/cathy1.jpg" (click)="clearMessage()" alt="Avatar" ><span class="avatar-text"></span>
+		</div>
+
+		<div id="mycontent" class="content">
+			<div #contentContainer ></div>
+		</div>
+		
+		<div class="say-div">
+			<input #askmessage class="say-input" text="" placeholder="say something ..." (keypress)="onKeypress($event)"/>
+			<!--<span (click)="speakClick()" class="speak-btn">Speak</span>-->
+			<!--<img (click)="speakClick()" class="speak-btn" src="images/recording.gif" alt="Avatar" >-->
+			<img (click)="speakClick()" class="speak-btn" src="images/recordingstop.png" alt="recording" >
+			
+			<!--<button (click)="speakClick()" class="speak-btn">Speak</button> -->
+			 <!--<i class="fa fa-microphone-slash" aria-hidden="true"></i></button>-->
+		</div>
+	</div>
+	
+</section>
+
+

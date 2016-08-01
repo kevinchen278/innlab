@@ -1,0 +1,25 @@
+<section class="container" *ngIf="showChatbox">
+	
+	<div class="header">
+		<span (click)="onPlay()">Chat with Cathy</span><span (click)="onClose(chatbox)" class="close-icon">X</span>
+	</div>
+	
+	<div class="avatar-div">
+		<img class="avatar" src="images/avatar.jpg" alt="Avatar" ><span class="avatar-text"></span>
+	</div>
+
+	<div #content id="mycontent" class="content">
+		<li *ngFor="let message of messages">
+			<span>{{message}}</span>
+		</li>	
+	</div>
+	<div class="say-div">
+		<input #askmessage class="say-input" text="" placeholder="say something ..." (keypress)="onKeypress($event)"/>
+		<!--<button (click)="onSend(askmessage.value); askmessage.value=''">Send</button> -->
+	</div>
+	
+</section>
+
+
+
+
